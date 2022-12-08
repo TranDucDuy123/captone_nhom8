@@ -2,6 +2,10 @@
 html, body {
     font-family: 'Nunito', sans-serif;
 }
+body {
+    color: #212529;
+    background-color: #fff;
+}
 .container {
     max-width: 1200px;
 }
@@ -10,6 +14,7 @@ html, body {
     --title-color: #2C3038;
     --text-color: #5a5a5a;
     --white-color: #fff;
+    --light-bg-color: #F7F9FC;
     --hover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
 }
 .btn-style-primary {
@@ -42,7 +47,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 12;
-    background-color: #fff;
+    background-color: var(--white-color);
     transition: all 0.5s;
     padding: 15px 0;
     display: flex;
@@ -169,7 +174,7 @@ header .btn__header:hover {
 }
 .block1__content {
     padding-top: 80px;
-    background: #ffffff;
+    background: var(--white-color);
     z-index: 1;
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(./img/banner.jpeg);
     background-repeat: no-repeat;
@@ -243,16 +248,15 @@ header .btn__header:hover {
     margin-top: 48px;
 }
 .choose-us__content {
-    background-color: red;
     padding: 48px 32px;
-    background-color: #f7f9fc;
+    background-color: var(--light-bg-color);
     border-radius: 6px;
-    border: 1px solid #f7f9fc;
+    border: 1px solid var(--light-bg-color);
     transition: all .3s ease-in;
     
 }
 .choose-us__content:hover {
-    background-color: #ffffff;
+    background-color: var(--white-color);
     border-color: #eee;
     box-shadow: var(--hover-box-shadow);
     transform: translateY(-8px);
@@ -277,7 +281,7 @@ header .btn__header:hover {
 /* block3 about-our */
 #about-our {
     padding: 78px 0 48px;
-    background-color: #f7f9fc;
+    background-color: var(--light-bg-color);
 }
 .about-our__list {
     display: flex;
@@ -326,7 +330,7 @@ header .btn__header:hover {
 /* block4 numbers */
 #numbers {
     padding: 24px 0 48px;
-    background-color: #f7f9fc;
+    background-color: var(--light-bg-color);
 }
 .numbers__container {
     display: flex;
@@ -339,7 +343,7 @@ header .btn__header:hover {
     padding: 0 15px;
 }
 .numbers-content {
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 32px;
     border-radius: 6px;
     border: 1px solid #eee;
