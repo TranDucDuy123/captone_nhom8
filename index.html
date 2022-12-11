@@ -24,6 +24,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- link animate.style -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- link Ow -->
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
   <!-- my css -->
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -449,7 +452,84 @@
     </div>
   </section>
 
+  <section class="comment">
+    <div class="comment__container container">
+      <div class="title__top__comment">
+        <h6>OUR CLIENTS TESTIMONIALS</h6>
+        <h3>What People Say</h3>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
+          nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+        </p>
+      </div>
+      <div class="comment__list">
+        <!-- 1 -->
+
+
+        <div class="comment__item">
+          <div class="comment__item__container">
+            <div class="comment__img">
+            </div>
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="comment__item__content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempora ducimus veniam corporis
+                perferendis. Nulla aperiam aliquam esse. </p>
+              <h5>William James</h5>
+              <h6>Company name</h6>
+            </div>
+          </div>
+        </div>
+        <div class="comment__item">
+          <div class="comment__item__container">
+            <div class="comment__img">
+            </div>
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="comment__item__content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempora ducimus veniam corporis
+                perferendis. Nulla aperiam aliquam esse. </p>
+              <h5>William James</h5>
+              <h6>Company name</h6>
+            </div>
+          </div>
+        </div>
+        <div class="comment__item">
+          <div class="comment__item__container">
+            <div class="comment__img">
+            </div>
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="comment__item__content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempora ducimus veniam corporis
+                perferendis. Nulla aperiam aliquam esse. </p>
+              <h5>William James</h5>
+              <h6>Company name</h6>
+            </div>
+          </div>
+        </div>
+        <div class="comment__item">
+          <div class="comment__item__container">
+            <div class="comment__img">
+            </div>
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="comment__item__content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempora ducimus veniam corporis
+                perferendis. Nulla aperiam aliquam esse. </p>
+              <h5>William James</h5>
+              <h6>Company name</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- end list -->
+      </div>
+    </div>
+  </section>
+
+
+
+
   <!-- Optional JavaScript -->
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -469,19 +549,26 @@
   <script>
     $('.counter').countUp();
   </script>
-  <!-- custom carousel-->
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- slick js -->
+  <script src="./slick/slick.js"></script>
+  <!-- custom -->
+
   <script>
     $(document).ready(function () {
-      $(".carousel__list").slick({
+      $(".comment__list").slick({
         // setting-name: setting-value
         infinite: true,
-        slidesToShow: 5,
+        slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
         dots: true,
       });
     });
   </script>
+
   <!-- theme js -->
   <script src="./js/theme.js"></script>
 </body>
