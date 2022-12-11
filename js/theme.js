@@ -38,3 +38,30 @@ function checkBtnMenu() {
 document.getElementById("btn-menu").addEventListener("click", function () {
   checkBtnMenu();
 });
+
+// duy
+// const selectDefault = (document.getElementById("selcet-pro1").checked = true);
+function uncheck23() {
+  document.getElementById("select-pro1").checked = true;
+  document.getElementById("select-pro2").checked = false;
+  document.getElementById("select-pro3").checked = false;
+  document.getElementById("layout-1").style.display = "flex";
+  document.getElementById("layout-2").style.display = "none";
+  document.getElementById("layout-3").style.display = "none";
+}
+function uncheck13() {
+  document.getElementById("select-pro2").checked = true;
+  document.getElementById("select-pro1").checked = false;
+  document.getElementById("select-pro3").checked = false;
+  document.getElementById("layout-1").style.display = "none";
+  document.getElementById("layout-2").style.display = "flex";
+  document.getElementById("layout-3").style.display = "none";
+}
+function uncheck12() {
+  document.getElementById("select-pro3").checked = true;
+  document.getElementById("select-pro1").checked = false;
+  document.getElementById("select-pro2").checked = false;
+  document.getElementById("layout-1").style.display = "none";
+  document.getElementById("layout-2").style.display = "none";
+  document.getElementById("layout-3").style.display = "flex";
+}
