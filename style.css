@@ -266,7 +266,7 @@ header .btn__header:hover {
 }
 
 
-.mode-container i:nth-child(2) {
+.mode-container i:nth-child(1) {
     display: none;
 }
 
