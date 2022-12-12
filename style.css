@@ -684,6 +684,27 @@ header .btn__header:hover {
 .block6__content:hover .block6__info>a i {
     transform: translateX(5px);
 }
+.backToTop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: var(--color-primary);
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 8px;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: .7;
+}
 
 
 /* block6 end */
