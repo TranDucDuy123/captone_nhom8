@@ -266,7 +266,7 @@ header .btn__header:hover {
 }
 
 
-.mode-container i:nth-child(2) {
+.mode-container i:nth-child(1) {
     display: none;
 }
 
@@ -684,9 +684,86 @@ header .btn__header:hover {
 .block6__content:hover .block6__info>a i {
     transform: translateX(5px);
 }
+.backToTop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: var(--color-primary);
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 8px;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: .7;
+}
 
 
 /* block6 end */
+footer .footer__item-last{
+    
+}
+footer .footer__email h3{
+    color: var(--title-color);
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.end-column {
+    background-color: var(--bg-color);
+    padding: 32px;
+    border-radius: 6px;
+    box-shadow: var(--card-box-shadow);
+
+}
+footer h4 {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--title-color);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.footer__email input {
+    background: var(--bg-color1);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+    width: 78%;
+    color: var(--title-color);
+    font-weight: 600;
+    border-radius: 6px;
+}
+.footer__email form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.footer__email button {
+    text-align: center;
+    background: var(--color-primary);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 20%;
+    color: #fff;
+    border-radius: 6px;
+}
+.footer__email p {
+    color: var(--text-color);
+}
 
 
 
@@ -846,6 +923,33 @@ header .btn__header:hover {
     }
 
     /* block6 end */
+
+    .project .project__item {
+        width: 33.33% ;
+    }
+    .project .layout__project {
+        width: 100% ;
+        justify-content: space-between;
+    }
+
+
+    footer .footer__item {
+        width: 33.33%;
+    }
+    footer .footer__item-last {
+        width: 100%;
+    }
+
+    .ready .ready__container h2 {
+        padding: 0 10%;
+    }
+    .ready .ready__container p {
+        padding: 0 12%;
+    }
+    footer .footer__bot {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
@@ -880,6 +984,29 @@ header .btn__header:hover {
     }
 
     /* block6 end */
+
+    .questions .questions__content {
+        flex-wrap: wrap;
+    }
+    .questions .questions__img {
+        width: 100%;
+    }
+    .questions .questions__list {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    footer .footer__item {
+        width: 100%;
+    }
+
+    .ready .ready__container h2 {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    .ready .ready__container p {
+        margin: 40px 0;
+    }
 }
 
 @media (max-width: 575px) {
@@ -942,6 +1069,16 @@ header .btn__header:hover {
     /* block6 */
 
     /* block6 end */
+
+    .ready .ready__container h2 {
+        font-size: 32px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .ready .ready__container p {
+        margin: 40px 0;
+        padding: 0;
+    }
 }
 
 
@@ -956,7 +1093,14 @@ header .btn__header:hover {
     align-items: center;
     padding: 100px 0;
 }
+.questions .header__title {
+    text-align: center;
 
+}
+.questions .header__title h3 {
+    font-size: 32px;
+    
+}
 .title__top {
     text-align: center;
 }
@@ -1047,7 +1191,7 @@ header .btn__header:hover {
 }
 
 .ques__item h3 {
-    font-size: 22px;
+    font-size: 20px;
     color: var(--title-color);
 }
 
@@ -1121,9 +1265,10 @@ header .btn__header:hover {
 
 /* start project */
 .project {
-    padding: 50px;
+    padding: 50px 0;
     background: var(--bg-color);
 }
+
 
 .project__container {
     display: flex;
@@ -1419,7 +1564,7 @@ footer li {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer__item {

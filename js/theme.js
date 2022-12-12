@@ -5,8 +5,8 @@ var iconSun = document.getElementById("icon-sun");
 var iconMoon = document.getElementById("icon-moon");
 
 function checkBtn() {
-  iconSun.classList.toggle("display-none");
-  iconMoon.classList.toggle("display-block");
+  iconSun.classList.toggle("display-block");
+  iconMoon.classList.toggle("display-none");
   console.log(toggleSwitch.checked);
   switchTheme(toggleSwitch);
 }
@@ -16,6 +16,9 @@ if (currentTheme) {
 
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
+
+    iconSun.classList.toggle("display-block");
+    iconMoon.classList.toggle("display-none");
   }
 }
 

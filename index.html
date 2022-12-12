@@ -288,7 +288,7 @@
   <!-- @@@ TRAN DUC DUY @@ -->
   <section class="questions">
     <div class="questions__container container">
-      <div class="title__top">
+      <div class="header__title">
         <h6>QUESTIONS AND ANSWERS</h6>
         <h3>General FAQs</h3>
         <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
@@ -318,7 +318,7 @@
             <input type="checkbox" hidden class="check-item-ques" id="check-item-2">
             <i class="fa-sharp fa-solid fa-angle-down select-2-i"></i>
             <i class="fa-sharp fa-solid fa-angle-up select-1-i"></i>
-            <h3>There are many passeages but the majority ?</h3>
+            <h3>Sed ut perspiciatis unde omnis?</h3>
             <p class="select-1">Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere
               voluptatibus
               consectetur quae
@@ -330,7 +330,7 @@
             <input type="checkbox" hidden class="check-item-ques" id="check-item-3">
             <i class="fa-sharp fa-solid fa-angle-down select-2-i"></i>
             <i class="fa-sharp fa-solid fa-angle-up select-1-i"></i>
-            <h3>There are many passeages but the majority ?</h3>
+            <h3>At vero eos iusto odio ducimus qui?</h3>
             <p class="select-1">Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere
               voluptatibus
               consectetur quae
@@ -342,7 +342,7 @@
             <input type="checkbox" hidden class="check-item-ques" id="check-item-4">
             <i class="fa-sharp fa-solid fa-angle-down select-2-i"></i>
             <i class="fa-sharp fa-solid fa-angle-up select-1-i"></i>
-            <h3>There are many passeages but the majority ?</h3>
+            <h3>TWe denounce with righteous?</h3>
             <p class="select-1">Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere
               voluptatibus
               consectetur quae
@@ -354,7 +354,7 @@
             <input type="checkbox" hidden class="check-item-ques" id="check-item-5">
             <i class="fa-sharp fa-solid fa-angle-down select-2-i"></i>
             <i class="fa-sharp fa-solid fa-angle-up select-1-i"></i>
-            <h3>There are many passeages but the majority ?</h3>
+            <h3>perspiciatis unde omnis?</h3>
             <p class="select-1">Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere
               voluptatibus
               consectetur quae
@@ -366,7 +366,7 @@
             <input type="checkbox" hidden class="check-item-ques" id="check-item-6">
             <i class="fa-sharp fa-solid fa-angle-down select-2-i"></i>
             <i class="fa-sharp fa-solid fa-angle-up select-1-i"></i>
-            <h3>There are many passeages but the majority ?</h3>
+            <h3>At vero eos iusto odio ducimus qui?</h3>
             <p class="select-1">Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere
               voluptatibus
               consectetur quae
@@ -397,10 +397,10 @@
           <h4>Project One</h4>
         </div>
         <div onclick="uncheck13()" for="select-pro2" class="project__item " id="pro-2">
-          <h4>Project One</h4>
+          <h4>Project Two</h4>
         </div>
         <div onclick="uncheck12()" for="select-pro3" class="project__item" id="pro-3">
-          <h4>Project One</h4>
+          <h4>Project Three</h4>
         </div>
       </div>
       <!-- layout 1 -->
@@ -449,7 +449,7 @@
           <img src="./img/b6.jpg" alt="">
         </div>
       </div>
-    </div>
+    </div> 
   </section>
 
   <section class="comment">
@@ -564,11 +564,21 @@
             <li>Our Terms </li>
             <li>Services</li>
             <li>Landing Page</li>
-            <li>Our People/li>
+            <li>Our People</li>
           </ul>
         </div>
         <div class="footer__item-last">
-          <h5>Newsletter</h5>
+          <div class="footer__email">
+            <h3>Newsletter </h3>
+            <div class="end-column">
+              <h4>Get latest updates and offers.</h4>
+              <form action="#" class="subscribe" method="post">
+                <input type="email" name="email" placeholder="Email Address" required="">
+                <button type="submit">Go</button>
+              </form>
+              <p>Sign up for our latest news &amp; articles. We won’t give you spam mails.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer__bot">
@@ -585,6 +595,8 @@
       </div>
     </div>
   </footer>
+  <!-- back to top -->
+  <a href="#" class="backToTop cd-top text-replace js-cd-top"><i class="fa fa-arrow-up"></i></a>
 
   <!-- Optional JavaScript -->
   <!-- jquery -->
@@ -629,6 +641,9 @@
     });
   </script>
 
+<!-- back to top js -->
+<script src="./back-to-top-master/assets/js/util.js"></script>
+<script src="./back-to-top-master/assets/js/mainbackToTop.js"></script>
   <!-- theme js -->
   <script src="./js/theme.js"></script>
 </body>
